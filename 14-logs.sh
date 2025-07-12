@@ -33,7 +33,7 @@ VALIDATE() {
     fi
 }
 
-dnf list installed mysql
+dnf list installed mysql &>>$LOG_FILE
 
 if [ $? -ne 0 ]
 then    
@@ -44,7 +44,7 @@ else
     echo -e "ntg to do mysql ........$y is already installed $N " &>>$LOG_FILE
 fi
 
-dnf list installed python3
+dnf list installed python3 &>>$LOG_FILE
 
 if [ $? -ne 0 ]
 then    
@@ -55,7 +55,7 @@ else
     echo -e "ntg to do python3......$y is already installed $N" &>>$LOG_FILE
 fi
 
-dnf list installed nginx
+dnf list installed nginx &>>$LOG_FILE
 
 if [ $? -ne 0 ]
 then    
