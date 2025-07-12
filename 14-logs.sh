@@ -66,5 +66,5 @@ else
     echo -e "ntg to do nginx ......$y is already installed $N " |tee -a $LOG_FILE
 fi
 
-echo "script ended executing at: $(date)" |tee -a $LOG_FILE
+echo "script ended executing at: $(date)" |tee -a $LOG_FILE 
 
