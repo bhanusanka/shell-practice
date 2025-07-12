@@ -7,4 +7,4 @@ then
     exit 1
 else
     echo "running with root access"
-
+fi
