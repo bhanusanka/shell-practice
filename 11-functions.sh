@@ -30,15 +30,15 @@ else
     echo "mysql is already installed ntg to do"
 fi
 
-dnf list installed python
+dnf list installed python3
 
 if [ $? -ne 0 ]
 then    
-    echo "python is not installed...gng to install"
-    dnf install python -y
-    VALIDATE $? "python"
+    echo "python3 is not installed...gng to install"
+    dnf install python3 -y
+    VALIDATE $? "python3"
 else
-    echo "python is already installed ntg to do"
+    echo "python3 is already installed ntg to do"
 fi
 
 dnf list installed nginx
