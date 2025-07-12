@@ -12,7 +12,7 @@ SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 
 mkdir -p $LOGS_FOLDER
-echo "script started executing at: $(date)" &>>$LOG_FILE
+echo "script started executing at: $(date)" |tee -a $LOG_FILE
 
 if [ $USERID -ne 0 ]
 then
@@ -66,5 +66,5 @@ else
     echo -e "ntg to do nginx ......$y is already installed $N " |tee -a $LOG_FILE
 fi
 
-echo "script ended executing at: $(date)" &>>$LOG_FILE
+echo "script ended executing at: $(date)" |tee -a $LOG_FILE
 
