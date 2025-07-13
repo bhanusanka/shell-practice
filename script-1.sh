@@ -1,4 +1,4 @@
 #!/bin/Bash
 
 GREETINGS="HELLO BHANU"
-ECHO "PID OF SCRIPT-1 : $$"
+echo "PID OF SCRIPT-1 : $$"
